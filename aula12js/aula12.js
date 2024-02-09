@@ -1,6 +1,10 @@
-/*
-Spread: [...] Função: Concatenar os objetos
 
+//Spread: [...] Função: Concatenar os objetos. Para usar o spread eu tenho que colocar uma conotação de array([])
+
+//Com o spread eu posso adicionar outros tipos de elementos além dos html 
+
+
+/*
 const jogador1={nome:"Felipe",energia:100,vidas:3,magia:150}
 const jogador2={nome:"Gui",energia:100,vidas:3,magia:150,velocidade:80}
 const jogador3={...jogador1,...jogador2}
@@ -100,9 +104,30 @@ array2=LL,OO,OO,LL
 
 */
 
+/*
 const soma=(v1,v2,v3)=>{
     return v1+v2+v3
 }
+let valores=[1,5,4,10]
 
-console.log(soma(1,5,4))
+console.log(soma(...valores))
+*/ 
+
+//Ver quantos elementos ou funções eu posso trabalhar com o html collection
+//objs1.
+
+////Ver quantos elementos ou funções eu posso trabalhar com o spread (Tem que ver um por vez)
+//objs2.
+
+const objs1=document.getElementsByTagName("div")
+const objs2=[...document.getElementsByTagName("div")]
+
+objs2.forEach(element => {
+    element.innerHTML="Kenji"
+}); 
+
+console.log(objs1)
+console.log(objs2)
+
+
 

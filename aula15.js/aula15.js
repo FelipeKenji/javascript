@@ -10,7 +10,7 @@ Comandos que serão iterados nesse loop
 //Condição do for: Enquanto a condição for verdadeira ele itera se for falsa ele sai e continua a execução do programa
 console.log("Início do Programa")
 
-for(let i=0; i < 101; i++){
+for(let i=0; i < 101; i +=9){
  if(i%2==0){
     console.log(i + " é par")
  } else{
